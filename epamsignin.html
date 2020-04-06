@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sign-in</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+#log{
+padding:5px 20px;
+margin:0.5px 0.5px;
+}
+.well img{
+float:left;
+width:40px;
+}
+.well h3{
+margin:0;
+padding:0;
+text-align:center;
+position:relative;
+top:50%;
+transform:translateY(-50%);
+
+}
+#cancel{
+text-align:right;
+position:relative;
+top:50%;
+transform:translateY(-140%);
+
+}
+.well{
+margin-top:40px;
+height:60px;
+}
+label{
+font-size:20px 10px;
+color:#aaa;
+
+}
+#label1{
+margin-top:20px;
+margin-bottom:10px;
+float:left;
+font-size:12px;
+}
+#label2{
+margin-top:20px;
+margin-bottom:10px;
+float:right;
+font-size:12px;
+}
+button{
+margin:15px 0px;
+}
+input[type="password"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.inputWithIcon input[type="password"] {
+  padding-left: 10px;
+  font-weight:bold;
+}
+input[type="email"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 2px 0;
+  
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.inputWithIcon input[type="email"] {
+  padding-left: 8px;
+  font-weight:bold;
+}
+.inputWithIcon{
+  position: relative;
+}
+.inputWithIcon i {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  padding: 8px 2px;
+  color: #aaa;
+  transition: 0.3s;
+}
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+h4 { 
+	color:#aaa;
+	
+	display: flex; 
+	flex-direction: row; 
+} 
+		
+h4:before, 
+h4:after { 
+	content: ""; 
+	flex: 1 1; 
+	border-bottom: 1.5px solid #aaa; 
+	margin: auto; 
+} 
+.alignleft {
+	color:#aaa;
+	float: left;
+}
+.alignright {
+	color:#aaa;
+	float: right;
+}
+.social-media{
+padding-top:5px;
+padding-bottom:10px;
+}
+.epam{
+padding-bottom:50px;
+}
+
+</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+			<div class="well well-sm" style="background-color:#66CCCC">
+				<img class="img img-responsive img-circle" src="epamimage.jpg">
+				<h3><font color="white"><b>Sign in</b></font></h3>
+				<h3 id="cancel"><a href="#"><font color="white"><b>&#215;</b></font></a></h3>
+			</div>
+			<form id="log">
+				<div class="inputWithIcon">
+					<input type="email" placeholder="mail@example.com" autofocus>
+					<i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+				</div>
+				<div class="inputWithIcon">
+					<input type="password" placeholder="password">
+					<i class="fa fa-unlock-alt fa-lg fa-fw" aria-hidden="true"></i>
+				</div>
+				<button type="submit" style="font-weight:bold;" class="btn btn-info btn-block">SIGN IN</button>
+				<div id="textbox">
+					<a href="#" class="alignleft" style="font-weight:bold;">Forgot your password?</a>
+					<a href="#" class="alignright" style="font-weight:bold;">Register!</a>
+				</div>
+				<div style="clear: both;"></div>
+				<h4>&nbsp;&nbsp;&nbsp;OR&nbsp;&nbsp;&nbsp;</h4>
+				<div class="social-media">
+					<button type="submit" style="font-weight:bold;color:white;background-color:rgb(64,113,216)" class="btn btn-block"><i class="fa fa-facebook"></i></button>
+					<button type="submit" class="btn btn-danger btn-block"><i class="fa fa-google-plus"></i></button>
+				</div>
+				<div class="epam">
+					<button type="submit" style="font-weight:bold;color:white;background-color:rgb(172,211,0)" class="btn btn-block">< EPAM LOGIN ></button>
+				</div>
+				<div></div>
+					
+			</form>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		</div>
+	</div>
+</body>
